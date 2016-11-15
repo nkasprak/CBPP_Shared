@@ -15,6 +15,7 @@ var InteractiveLoader = function () {
 			var response = xhttp.responseText;
 			var temp = document.createElement("div");
 			var target = document.getElementById(id);
+			target.innerHTML = "";
 			temp.innerHTML = response;
 			var stylesheets = temp.querySelectorAll("link");
 			function adjustURL(url) {
